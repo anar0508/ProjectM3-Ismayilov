@@ -5,13 +5,15 @@ class Activity {
         originalActivityRow.addEventListener('dragstart', () => {
             originalActivityRow.classList.add('dragging');
         });
+
         originalActivityRow.addEventListener('dragend', () => {
             originalActivityRow.classList.remove('dragging');
         });
+        
         let deleteButton = originalActivityRow.querySelector('.delete-activity-button');
         deleteButton.addEventListener('click', this.deleteActivityRow);
 
-        let clonedActivityRow = this.cloneActivityRow(originalActivityRow);
+        this.cloneActivityRow(originalActivityRow);
     }
 
     cloneActivityRow = (original) => {
