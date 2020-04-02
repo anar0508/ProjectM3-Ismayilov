@@ -32,7 +32,7 @@ class Activity {
     deleteActivityRow = (e) => {
         let rows = document.querySelectorAll('.row');
         if (rows.length > 1) {
-            if (e.target.parentNode.className !== "row") { e.target.parentNode.parentNode.remove(); }
+            if (!e.target.parentNode.classList.contains("row")) { e.target.parentNode.parentNode.remove(); }
             else e.target.parentNode.remove();
         }
     }
