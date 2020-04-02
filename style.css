@@ -90,8 +90,8 @@ h1 {
   display: flex;
   justify-content: space-around;
   height: 35px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   align-items: center;
 }
 

@@ -113,7 +113,7 @@ class Dragging {
 }
 
 class Main {
-    run = ()=>{
+    run = () => {
         let activity = new Activity();
         let sorting = new Sorting();
         let dragging = new Dragging();
