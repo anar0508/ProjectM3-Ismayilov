@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <linkhref="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container-head"></div>
+      <div class="container-body">
+        <h1>To-Do List</h1>
+        <div class="sorting-button-container">
+          <button id="sorting">
+            <svg
+              class="changeSort"
+              id="descending"
+              fill="currentColor"
+              width="25"
+              height="15"
+              viewBox="0 0 25 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2.5" width="2.5" height="12.5" />
+              <rect
+                x="10"
+                y="3.75"
+                width="2.5"
+                height="7.5"
+                transform="rotate(-90 10 3.75)"
+              />
+              <rect
+                x="10"
+                y="8.75"
+                width="2.5"
+                height="10"
+                transform="rotate(-90 10 8.75)"
+              />
+              <rect
+                x="10"
+                y="13.75"
+                width="2.5"
+                height="15"
+                transform="rotate(-90 10 13.75)"
+              />
+              <path d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z" />
+            </svg>
+            <svg
+              id="ascending"
+              fill="currentColor"
+              width="25"
+              height="15"
+              viewBox="0 0 25 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="5"
+                y="15"
+                width="2.5"
+                height="12.5"
+                transform="rotate(-180 5 15)"
+              />
+              <rect
+                x="10"
+                y="3.75"
+                width="2.5"
+                height="7.5"
+                transform="rotate(-90 10 3.75)"
+              />
+              <rect
+                x="10"
+                y="8.75"
+                width="2.5"
+                height="10"
+                transform="rotate(-90 10 8.75)"
+              />
+              <rect
+                x="10"
+                y="13.75"
+                width="2.5"
+                height="15"
+                transform="rotate(-90 10 13.75)"
+              />
+              <path
+                d="M3.75 6.55671e-07L6.99759 4.6875L0.502404 4.6875L3.75 6.55671e-07Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="row-container">
+          <div class="row draggable"  draggable="true">
+            <div class="drag-zone">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2" cy="2" r="2" fill="#C4C4C4" />
+                <circle cx="2" cy="10" r="2" fill="#C4C4C4" />
+                <circle cx="10" cy="2" r="2" fill="#C4C4C4" />
+                <circle cx="10" cy="10" r="2" fill="#C4C4C4" />
+              </svg>
+            </div>
+            <div class="activity-container">
+              <input
+                type="text"
+                name="activity"
+                placeholder="Активность"
+                class="activity-text"
+              />
+            </div>
+            <button class="delete-activity-button">
+              <svg
+                class="del"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="#C4C4C4"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  class="circle"
+                  x="0.5"
+                  y="0.5"
+                  width="19"
+                  height="19"
+                  rx="9.5"
+                />
+                <path d="M6 6L14 14" />
+                <path d="M6 14L14 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="add-button-container">
+          <button class="add-button">
+            <div class="plus-sign">+</div>
+            <div class="add-text">Добавить</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

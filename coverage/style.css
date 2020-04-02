@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+body {
+  width: 100%;
+  max-width: 1024px;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  position: fixed;
+  top: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 360px;
+  align-items: center;
+}
+
+.container-head {
+  width: 100%;
+  height: 24px;
+  background-color: #ffdc40;
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+}
+
+.container-body {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  width: 80%;
+  margin: 20px 0;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.sorting-button-container {
+  width: 80%;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#sorting {
+  background-color: white;
+  border: none;
+}
+
+#sorting :hover {
+  fill: #c4c4c4;
+}
+
+.changeSort {
+  display: none;
+}
+
+.row-container {
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  justify-content: space-around;
+  height: 35px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.drag-zone:hover {
+  height: 34px;
+  padding-top: 7px;
+  border-radius: 10px 0 0 10px;
+  background-color: #ffdc40;
+}
+
+.row:active {
+  background-color: #ffdc40;
+}
+
+.row:active .activity-container input {
+  background-color: #ffdc40;
+}
+
+.row:active .delete-activity-button  {
+    background-color: #ffdc40;
+  }
+
+.drag-zone {
+  height: 19.5px;
+  width: 10%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: grab;
+}
+.drag-zone:active{
+    cursor: grabbing;
+}
+
+.drag-zone.dragging{
+    opacity: .5;
+}
+
+.activity-container {
+  height: 19.5px;
+  width: 75%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.activity-text {
+  width: 100%;
+  border: none;
+}
+
+.delete-activity-button {
+  height: 19.5px;
+  width: 15%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  background: white;
+  outline: none;
+}
+
+.del > * {
+  pointer-events: none;
+}
+
+.del:hover {
+  fill: #833ae0;
+  stroke: white;
+}
+
+.add-button-container {
+  margin: 7px 0 17px;
+}
+
+.add-button {
+  height: 42px;
+  width: 150px;
+  border-radius: 72px;
+  background-color: #9953f1;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.plus-sign {
+  display: flex;
+  color: white;
+  background-color: #aa68fe;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-text {
+  color: white;
+}
+
+.add-button:hover{
+    background-color: #aa68fe;
+}
+
+.plus-sign:hover{
+    background-color: #9953f1;
+}
