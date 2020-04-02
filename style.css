@@ -80,15 +80,17 @@ h1 {
   width: 82%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
 }
 
 .row {
   width: 100%;
   display: flex;
-  border: 1px solid #c4c4c4;
-  border-radius: 10px;
+
   justify-content: space-around;
   height: 35px;
+  margin-top: 10px;
   margin-bottom: 10px;
   align-items: center;
 }
